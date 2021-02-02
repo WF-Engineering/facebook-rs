@@ -1,0 +1,22 @@
+[package]
+name = "facebook-rs"
+version = "0.1.0"
+authors = ["Arco Hsieh <yiyezhihen@gmail.com>", "Rosehsu <rosehsu47@gmail.com>"]
+edition = "2018"
+license = "MIT"
+keywords = ["api"]
+description = "Facebook's Rust API unofficial Library"
+homepage = "https://github.com/WF-Engineering/facebook-rs"
+repository = "https://github.com/WF-Engineering/facebook-rs"
+
+[dependencies]
+log = "0.4"
+percent-encoding = "2.1"
+serde = { version = "1.0", features = ["derive"] }
+strum = "0.18.0"
+strum_macros = "0.18.0"
+reqwest = { version = "0.10", features = ["json", "blocking"] }
+
+[dev-dependencies]
+tokio = { version = "0.2", features = ["full"] }
+env_logger = "0.7.0"
